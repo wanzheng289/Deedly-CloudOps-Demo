@@ -1,0 +1,47 @@
+# Secrets / local config
+.env
+.env.*
+!.env_example
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Node / frontend build artifacts
+node_modules/
+dist/
+build/
+
+# Runtime and generated local data
+data/runtime/
+data/migration/
+data/documents/
+uploads/
+*.sqlite
+*.db
+
+# Large/raw external assets and local models
+data/raw/
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Personal/local notes and job files
+JD.xlsx
+step.md
+improve.md

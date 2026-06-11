@@ -1,0 +1,180 @@
+{
+  "dataset": "multidoc_dialogue_cases",
+  "dataset_path": "project/eval_harness/datasets/multidoc_dialogue_cases.jsonl",
+  "limit": 10,
+  "top_k": 5,
+  "run_retrieval": false,
+  "summary": {
+    "case_count": 10,
+    "error_count": 0,
+    "retrieval_recall_at_k": 1.0,
+    "tool_call_accuracy": 1.0,
+    "kg_query_accuracy": null,
+    "citation_coverage": null,
+    "answer_faithfulness": 1.0,
+    "memory_usefulness": 1.0,
+    "latency_ms": 0.0002501000000001974
+  },
+  "cases": [
+    {
+      "case_id": "dialogue_0001",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.0007919999999994598,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 2
+      }
+    },
+    {
+      "case_id": "dialogue_0002",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.0002500000000071889,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 2
+      }
+    },
+    {
+      "case_id": "dialogue_0003",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.00024999999999331113,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 1
+      }
+    },
+    {
+      "case_id": "dialogue_0004",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.0001669999999953653,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 1
+      }
+    },
+    {
+      "case_id": "dialogue_0005",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.0001670000000092431,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 1
+      }
+    },
+    {
+      "case_id": "dialogue_0006",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.0001669999999953653,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 2
+      }
+    },
+    {
+      "case_id": "dialogue_0007",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.00020800000000154029,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 1
+      }
+    },
+    {
+      "case_id": "dialogue_0008",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.00016599999999589166,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 1
+      }
+    },
+    {
+      "case_id": "dialogue_0009",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.0001669999999953653,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 2
+      }
+    },
+    {
+      "case_id": "dialogue_0010",
+      "dataset": "multidoc_dialogue_cases",
+      "retrieval_recall_at_k": 1.0,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": 1.0,
+      "memory_usefulness": 1.0,
+      "latency_ms": 0.0001670000000092431,
+      "error": "",
+      "details": {
+        "domain": "dmv",
+        "expected_doc_count": 3
+      }
+    }
+  ]
+}

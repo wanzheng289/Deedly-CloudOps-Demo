@@ -1,0 +1,139 @@
+project:
+  name: enterprise-customer-ops-agent
+  positioning: >
+    Enterprise customer/ops Multi-Tool Agent with Vector-RAG,
+    Enterprise KG, Customer Memory, Workflow, and Eval Harness.
+
+data_sources:
+  enterprise_rag_bench_documents:
+    path: ../data/raw/enterprise_rag_bench/documents.jsonl
+    role: enterprise_vector_rag_corpus
+    first_use_phase: 2
+  enterprise_rag_bench_questions:
+    path: ../data/raw/enterprise_rag_bench/questions.jsonl
+    role: enterprise_rag_eval_golden_set
+    first_use_phase: 3
+  customer_support_conversations:
+    path: ../data/raw/customer_support/customer_support_data.csv
+    role: customer_profiles_tickets_memory
+    first_use_phase: 4
+  doc2dial:
+    path: ../data/raw/doc2dial
+    role: single_document_multiturn_eval
+    first_use_phase: 10
+  multidoc2dial:
+    path: ../data/raw/multidoc2dial
+    role: multi_document_multiturn_eval
+    first_use_phase: 10
+  rag_qna_system:
+    path: ../RAGQnASystem
+    role: kg_engineering_method_reference
+    first_use_phase: 6
+
+core_chains:
+  enterprise_rag:
+    goal: answer enterprise document questions with citations
+    primary_tool: search_enterprise_kb
+    storage:
+      vector: milvus
+      parent_chunks: postgresql
+      cache: redis
+  enterprise_kg:
+    goal: query structured enterprise relationships
+    primary_tool: enterprise_kg_query
+    storage:
+      graph: neo4j
+      source_records: postgresql
+  customer_memory:
+    goal: provide customer context, tickets, and long-term memory
+    primary_tools:
+      - get_customer_profile
+      - search_customer_tickets
+      - update_customer_memory
+    storage:
+      structured: postgresql
+      cache: redis
+      semantic_later: milvus
+  multi_tool_agent:
+    goal: route tasks to the correct tools and workflows
+    primary_components:
+      - tool_router
+      - customer_reply_workflow
+      - ticket_priority_workflow
+      - kg_enhanced_qa_workflow
+  eval_harness:
+    goal: evaluate retrieval, tool use, KG query, citation, faithfulness, memory, and latency
+    first_metrics:
+      - retrieval_recall_at_k
+      - citation_coverage
+
+enterprise_kg_schema:
+  node_types:
+    - Customer
+    - Product
+    - Module
+    - SupportTicket
+    - Document
+    - Issue
+    - Team
+    - Service
+    - DeploymentEnv
+    - SLA
+    - FAQ
+    - Version
+  relation_types:
+    - CUSTOMER_OPENED_TICKET
+    - TICKET_MENTIONS_PRODUCT
+    - TICKET_MENTIONS_MODULE
+    - DOCUMENT_EXPLAINS_PRODUCT
+    - DOCUMENT_EXPLAINS_MODULE
+    - ISSUE_RELATED_TO_VERSION
+    - TEAM_OWNS_SERVICE
+    - PRODUCT_DEPENDS_ON_SERVICE
+    - CUSTOMER_USES_PRODUCT
+    - FAQ_ANSWERS_ISSUE_TYPE
+
+tools:
+  search_enterprise_kb:
+    phase: 2
+    chain: enterprise_rag
+  enterprise_kg_query:
+    phase: 6
+    chain: enterprise_kg
+  get_customer_profile:
+    phase: 5
+    chain: customer_memory
+  search_customer_tickets:
+    phase: 5
+    chain: customer_memory
+  update_customer_memory:
+    phase: 5
+    chain: customer_memory
+  draft_customer_reply:
+    phase: 8
+    chain: multi_tool_agent
+  classify_intent:
+    phase: 8
+    chain: multi_tool_agent
+  detect_sentiment:
+    phase: 8
+    chain: multi_tool_agent
+  assign_priority:
+    phase: 8
+    chain: multi_tool_agent
+
+mvp_acceptance:
+  - Enterprise RAG answers sampled EnterpriseRAG-Bench questions with citations.
+  - Customer Support data produces customer profiles and support tickets.
+  - Enterprise KG produces nodes and relations and supports at least one graph query.
+  - Agent selects at least two tool categories in a combined customer-support task.
+  - Eval Harness reports Recall@K and Citation Coverage for a small sample.
+
+non_goals:
+  - full_enterprise_rag_bench_import
+  - complex_llm_entity_extraction_training
+  - complete_mcp_implementation
+  - polished_frontend
+  - medical_qa_plugin
+  - local_llm_inference_optimization
+

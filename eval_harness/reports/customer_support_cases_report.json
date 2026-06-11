@@ -1,0 +1,200 @@
+{
+  "dataset": "customer_support_cases",
+  "dataset_path": "project/eval_harness/datasets/customer_support_cases.jsonl",
+  "limit": 10,
+  "top_k": 5,
+  "run_retrieval": false,
+  "summary": {
+    "case_count": 10,
+    "error_count": 0,
+    "retrieval_recall_at_k": null,
+    "tool_call_accuracy": 1.0,
+    "kg_query_accuracy": null,
+    "citation_coverage": null,
+    "answer_faithfulness": null,
+    "memory_usefulness": 1.0,
+    "latency_ms": 321.09179170000004
+  },
+  "cases": [
+    {
+      "case_id": "cust_0001",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 319.36020899999994,
+      "error": "",
+      "details": {
+        "expected_priority": "high",
+        "actual_priority": "high",
+        "priority_match": true,
+        "intent": "access_issue"
+      }
+    },
+    {
+      "case_id": "cust_0002",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 330.582958,
+      "error": "",
+      "details": {
+        "expected_priority": "high",
+        "actual_priority": "medium",
+        "priority_match": false,
+        "intent": "general_support"
+      }
+    },
+    {
+      "case_id": "cust_0003",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 311.9124999999999,
+      "error": "",
+      "details": {
+        "expected_priority": "high",
+        "actual_priority": "medium",
+        "priority_match": false,
+        "intent": "general_support"
+      }
+    },
+    {
+      "case_id": "cust_0004",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 300.9592079999999,
+      "error": "",
+      "details": {
+        "expected_priority": "medium",
+        "actual_priority": "medium",
+        "priority_match": true,
+        "intent": "access_issue"
+      }
+    },
+    {
+      "case_id": "cust_0005",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 350.51804100000015,
+      "error": "",
+      "details": {
+        "expected_priority": "high",
+        "actual_priority": "medium",
+        "priority_match": false,
+        "intent": "general_support"
+      }
+    },
+    {
+      "case_id": "cust_0006",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 304.8502500000001,
+      "error": "",
+      "details": {
+        "expected_priority": "high",
+        "actual_priority": "high",
+        "priority_match": true,
+        "intent": "general_support"
+      }
+    },
+    {
+      "case_id": "cust_0007",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 337.2459170000002,
+      "error": "",
+      "details": {
+        "expected_priority": "high",
+        "actual_priority": "medium",
+        "priority_match": false,
+        "intent": "general_support"
+      }
+    },
+    {
+      "case_id": "cust_0008",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 313.64854200000013,
+      "error": "",
+      "details": {
+        "expected_priority": "low",
+        "actual_priority": "medium",
+        "priority_match": false,
+        "intent": "general_support"
+      }
+    },
+    {
+      "case_id": "cust_0009",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 311.7584579999999,
+      "error": "",
+      "details": {
+        "expected_priority": "low",
+        "actual_priority": "medium",
+        "priority_match": false,
+        "intent": "general_support"
+      }
+    },
+    {
+      "case_id": "cust_0010",
+      "dataset": "customer_support_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": 1.0,
+      "latency_ms": 330.081834,
+      "error": "",
+      "details": {
+        "expected_priority": "high",
+        "actual_priority": "medium",
+        "priority_match": false,
+        "intent": "billing_issue"
+      }
+    }
+  ]
+}

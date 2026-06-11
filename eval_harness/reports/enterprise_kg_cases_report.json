@@ -1,0 +1,180 @@
+{
+  "dataset": "enterprise_kg_cases",
+  "dataset_path": "project/eval_harness/datasets/enterprise_kg_cases.jsonl",
+  "limit": 10,
+  "top_k": 5,
+  "run_retrieval": false,
+  "summary": {
+    "case_count": 10,
+    "error_count": 0,
+    "retrieval_recall_at_k": null,
+    "tool_call_accuracy": 1.0,
+    "kg_query_accuracy": 1.0,
+    "citation_coverage": null,
+    "answer_faithfulness": null,
+    "memory_usefulness": null,
+    "latency_ms": 285.3799375
+  },
+  "cases": [
+    {
+      "case_id": "kg_0001",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 302.668167,
+      "error": "",
+      "details": {
+        "node_count": 54,
+        "relation_count": 57
+      }
+    },
+    {
+      "case_id": "kg_0002",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 281.198833,
+      "error": "",
+      "details": {
+        "node_count": 66,
+        "relation_count": 69
+      }
+    },
+    {
+      "case_id": "kg_0003",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 284.25204199999985,
+      "error": "",
+      "details": {
+        "node_count": 140,
+        "relation_count": 143
+      }
+    },
+    {
+      "case_id": "kg_0004",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 262.9278749999999,
+      "error": "",
+      "details": {
+        "node_count": 78,
+        "relation_count": 81
+      }
+    },
+    {
+      "case_id": "kg_0005",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 315.4610419999999,
+      "error": "",
+      "details": {
+        "node_count": 70,
+        "relation_count": 73
+      }
+    },
+    {
+      "case_id": "kg_0006",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 268.1719579999999,
+      "error": "",
+      "details": {
+        "node_count": 160,
+        "relation_count": 163
+      }
+    },
+    {
+      "case_id": "kg_0007",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 303.40675000000016,
+      "error": "",
+      "details": {
+        "node_count": 160,
+        "relation_count": 163
+      }
+    },
+    {
+      "case_id": "kg_0008",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 278.37833300000005,
+      "error": "",
+      "details": {
+        "node_count": 152,
+        "relation_count": 155
+      }
+    },
+    {
+      "case_id": "kg_0009",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 270.2611250000002,
+      "error": "",
+      "details": {
+        "node_count": 132,
+        "relation_count": 135
+      }
+    },
+    {
+      "case_id": "kg_0010",
+      "dataset": "enterprise_kg_cases",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": 1.0,
+      "citation_coverage": null,
+      "answer_faithfulness": null,
+      "memory_usefulness": null,
+      "latency_ms": 287.07325000000014,
+      "error": "",
+      "details": {
+        "node_count": 152,
+        "relation_count": 155
+      }
+    }
+  ]
+}

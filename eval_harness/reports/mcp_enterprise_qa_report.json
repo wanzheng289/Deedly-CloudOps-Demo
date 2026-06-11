@@ -1,0 +1,49 @@
+{
+  "dataset": "enterprise_qa",
+  "dataset_path": "project/eval_harness/datasets/enterprise_qa.jsonl",
+  "top_k": 5,
+  "limit": 2,
+  "summary": {
+    "case_count": 2,
+    "error_count": 0,
+    "retrieval_recall_at_k": null,
+    "tool_call_accuracy": 1.0,
+    "kg_query_accuracy": null,
+    "citation_coverage": 0.0,
+    "answer_faithfulness": 0.8115384615384615,
+    "memory_usefulness": null,
+    "latency_ms": null
+  },
+  "cases": [
+    {
+      "case_id": "qst_0001",
+      "dataset": "enterprise_qa",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": 0.0,
+      "answer_faithfulness": 0.8159340659340659,
+      "memory_usefulness": null,
+      "latency_ms": null,
+      "error": "",
+      "details": {
+        "hit_doc_ids": []
+      }
+    },
+    {
+      "case_id": "qst_0002",
+      "dataset": "enterprise_qa",
+      "retrieval_recall_at_k": null,
+      "tool_call_accuracy": 1.0,
+      "kg_query_accuracy": null,
+      "citation_coverage": 0.0,
+      "answer_faithfulness": 0.8071428571428572,
+      "memory_usefulness": null,
+      "latency_ms": null,
+      "error": "",
+      "details": {
+        "hit_doc_ids": []
+      }
+    }
+  ]
+}

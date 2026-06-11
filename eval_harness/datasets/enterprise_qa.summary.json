@@ -1,0 +1,27 @@
+{
+  "input_path": "./data/raw/enterprise_rag_bench/questions.jsonl",
+  "output_path": "project/eval_harness/datasets/enterprise_qa.jsonl",
+  "limit": null,
+  "written": 500,
+  "counts": {
+    "question_type:basic": 175,
+    "question_type:completeness": 20,
+    "question_type:conflicting_info": 20,
+    "question_type:constrained": 30,
+    "question_type:high_level": 10,
+    "question_type:info_not_found": 20,
+    "question_type:intra_document_reasoning": 40,
+    "question_type:miscellaneous": 20,
+    "question_type:project_related": 40,
+    "question_type:semantic": 125,
+    "source_type:confluence": 114,
+    "source_type:fireflies": 25,
+    "source_type:github": 60,
+    "source_type:gmail": 55,
+    "source_type:google_drive": 60,
+    "source_type:hubspot": 34,
+    "source_type:jira": 100,
+    "source_type:linear": 58,
+    "source_type:slack": 79
+  }
+}
